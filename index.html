@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>Document</title>
+    <style>
+
+        input{
+            margin-top: 2px !important;
+            margin-bottom: 2px !important;
+            color: #ffffff;
+        }
+
+        #calc{
+            width: 280px;
+            /* height: 220px; */
+            border: 2px solid grey;
+            background-color: black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #screen{
+            width: 280px;
+            height: 20px;
+        }
+        #screen input{
+            width: 97%;
+            background-color: cadetblue;
+        }
+        #op-buttons input{
+            width: 66.5px;
+        }
+        .input-style input{
+            width: 90px;
+        }
+        #num-5 input{
+            width: 99%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="calc">
+
+        <div id="screen"><input disabled type="text" id="my"></div>
+        <div id="op-buttons">
+            <input onclick="print('+')" type="button" value="+">
+            <input onclick="print('-')" type="button" value="-">
+            <input onclick="print('*')" type="button" value="*">
+            <input onclick="print('/')" type="button" value="/">
+        </div>
+        <div id="num-1" class="input-style">
+            <input onclick="print('7')" type="button" value="7">
+            <input onclick="print('8')" type="button" value="8">
+            <input onclick="print('9')" type="button" value="9">
+
+        </div>
+        <div id="num-2" class="input-style">
+            <input onclick="print('4')" type="button" value="4">
+            <input onclick="print('5')" type="button" value="5">
+            <input onclick="print('6')" type="button" value="6">
+
+        </div>
+        <div id="num-3" class="input-style">
+            <input onclick="print('1')" type="button" value="1">
+            <input onclick="print('2')" type="button" value="2">
+            <input onclick="print('3')" type="button" value="3">
+
+        </div>
+        <div id="num-4" class="input-style">
+            <input onclick="print('.')" type="button" value=".">
+            <input onclick="print('0')" type="button" value="0">
+            <input onclick="clear()" type="button" value="Clear">
+
+        </div>
+        <div id="num-5">
+            <input onclick="result()" type="button" value="Result">
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
